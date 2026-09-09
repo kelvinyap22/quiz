@@ -10,11 +10,11 @@ class KnowledgeSeeder extends Seeder
 {
     public function run(): void
     {
-        // Buat Kategori Dummy
+  
         $kategori1 = Kategori::create(['nama' => 'Teknologi']);
         $kategori2 = Kategori::create(['nama' => 'Manajemen']);
 
-        // Buat Informasi Dummy
+  
         Informasi::create([
             'kategori_id' => $kategori1->id,
             'judul' => 'Pengenalan Laravel 12 Framework',
