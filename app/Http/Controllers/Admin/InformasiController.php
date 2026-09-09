@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class InformasiController extends Controller
 {
-    // Tampilkan semua data di Dashboard Admin
     public function index()
     {
 
@@ -64,7 +63,7 @@ class InformasiController extends Controller
                          ->with('success', 'Informasi berhasil diperbarui!');
     }
 
-    // Hapus Data 
+  
     public function destroy(Informasi $informasi)
     {
         $informasi->delete();
